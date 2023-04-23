@@ -1,0 +1,28 @@
+<!-- index.ejs -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sum Calculator</title>
+  </head>
+  <body>
+    <div id="loading" style="display: none;">
+      <h2>Loading...</h2>
+      <br><br><br><br><br><br><br><br>
+    </div>
+    <h1>Enter two numbers to get their sum:</h1>
+    <form>
+      <input type="number" name="num1" placeholder="Number 1" required>
+      <input type="number" name="num2" placeholder="Number 2" required>
+      <button type="submit" formaction="/sum" method="POST" onclick="showLoading()">Submit</button>
+    </form>
+
+
+
+    <script>
+      function showLoading() {
+        document.getElementById('loading').style.display = 'block';
+      }
+    </script>
+  </body>
+</html>

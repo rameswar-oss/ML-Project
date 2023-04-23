@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RF</title>
+  </head>
+  <body>
+  <div id="form" style="display: block;">
+
+<!-- method="post" action="/RF" -->
+  <form id="myForm" method="post" action="/RF">
+  <h2>Heart disease predictor</h2>
+
+  <label>Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female" required>
+  <label for="female">Female</label><br>
+  <input type="radio" id="Other" name="gender" value="Other" required>
+  <label for="Other">Other</label><br><br>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" required><br><br>
+
+  <label>Do you have hypertension?</label><br>
+  <input type="radio" id="hypertension-yes" name="hypertension" value="yes" required>
+  <label for="hypertension-yes">Yes</label><br>
+  <input type="radio" id="hypertension-no" name="hypertension" value="no" required>
+  <label for="hypertension-no">No</label><br><br>
+
+  <label>Do you have Heart Heart Pain?</label><br>
+  <input type="radio" id="HeartPain-yes" name="HeartPain" value="yes" required>
+  <label for="HeartPain-yes">Yes</label><br>
+  <input type="radio" id="HeartPain-no" name="HeartPain" value="no" required>
+  <label for="HeartPain-no">No</label><br><br>
+
+  <label>Did you ever got married?</label><br>
+  <input type="radio" id="married-yes" name="married" value="yes" required>
+  <label for="married-yes">Yes</label><br>
+  <input type="radio" id="married-no" name="married" value="no" required>
+  <label for="married-no">No</label><br><br>
+
+  <label>What is your work type?</label><br>
+  <input type="radio" id="Private" name="workType" value="Private" required>
+  <label for="Private">Private</label><br>
+  <input type="radio" id="Self-employed" name="workType" value="Self-employed" required>
+  <label for="Self-employed">Self-employed</label><br>
+
+  <input type="radio" id="Govt job" name="workType" value="Govt job" required>
+  <label for="Govt job">Government job</label><br>
+
+  <input type="radio" id="children" name="workType" value="children" required>
+  <label for="children">Children</label><br>
+
+  <input type="radio" id="Never worked" name="workType" value="Never worked" required>
+  <label for="Never worked">Never worked</label><br>
+
+  <label>What is your Residence type?</label><br>
+  <input type="radio" id="Urban" name="Residence" value="Urban" required>
+  <label for="Urban">Urban</label><br>
+  <input type="radio" id="Rural" name="Residence" value="Rural" required>
+  <label for="Rural">Rural</label><br><br>
+
+
+
+  <label for="age">Avearge Glucose:</label>
+  <input type="number" name="avgGlucose" required><br><br>
+
+
+
+  <label for="BMI">BMI:</label>
+  <input type="number"  name="BMI" required><br><br>
+
+  <label>Are you a smoker?</label><br>
+  <input type="radio" id="formerlySmoked" name="smoker" value="formerlySmoked" required>
+  <label for="formerlySmoked">Formerly Smoked</label><br>
+  <input type="radio" id="neverSmoked" name="smoker" value="neverSmoked" required>
+  <label for="neverSmokedo">Never Smoked</label><br><br>
+
+  <input type="radio" id="smokes" name="smoker" value="smokes" required>
+  <label for="smokes">Smokes</label><br><br>
+
+  <input type="radio" id="Unknown" name="smoker" value="Unknown" required>
+  <label for="Unknown">Unknown</label><br><br>
+
+<button type="submit" onclick="showLoading() value="Submit">Submit</button>
+  <!-- <button type="submit" onclick="showLoading() id="calculate-btn" data-toggle="popover" data-placement="bottom" value="Submit">Submit -->
+</form>
+</div>
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

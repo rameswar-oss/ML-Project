@@ -1,0 +1,25 @@
+body {
+  /* background-image: url("heart_disease.jpg"); */
+  /* background-size: cover;
+  background-position: center; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.title {
+  font-size: 28px;
+}
+
+.algorithm-list {
+  list-style-type: none;
+  padding: 0;
+  border: 2px solid black;
+  padding: 20px;
+}
